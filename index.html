@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals - Interactive Learning Dashboard</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 JavaScript Fundamentals Dashboard</h1>
+            <p>Explore the core concepts of JavaScript through interactive examples!</p>
+        </header>
+
+        <!-- Part 1: JavaScript Basics -->
+        <section class="section" id="basics-section">
+            <h2>🎯 Part 1: JavaScript Basics</h2>
+            <div class="demo-box">
+                <h3>User Information Collector</h3>
+                <input type="text" id="userName" placeholder="Enter your name">
+                <input type="number" id="userAge" placeholder="Enter your age">
+                <button onclick="processUserInfo()">Process Info</button>
+                <div id="userResult" class="result"></div>
+            </div>
+        </section>
+
+        <!-- Part 2: Functions -->
+        <section class="section" id="functions-section">
+            <h2>❤️ Part 2: JavaScript Functions</h2>
+            <div class="demo-box">
+                <h3>Calculator Functions</h3>
+                <input type="number" id="num1" placeholder="First number">
+                <input type="number" id="num2" placeholder="Second number">
+                <div class="button-group">
+                    <button onclick="performCalculation('add')">Add</button>
+                    <button onclick="performCalculation('multiply')">Multiply</button>
+                    <button onclick="formatResult()">Format Result</button>
+                </div>
+                <div id="calcResult" class="result"></div>
+            </div>
+        </section>
+
+        <!-- Part 3: Loops -->
+        <section class="section" id="loops-section">
+            <h2>🔁 Part 3: JavaScript Loops</h2>
+            <div class="demo-box">
+                <h3>Loop Demonstrations</h3>
+                <div class="button-group">
+                    <button onclick="generateCountdown()">Countdown Timer</button>
+                    <button onclick="createColorList()">Generate Color List</button>
+                    <button onclick="animateBoxes()">Animate Boxes</button>
+                </div>
+                <div id="loopResult" class="result"></div>
+                <div id="animationArea" class="animation-area"></div>
+            </div>
+        </section>
+
+        <!-- Part 4: DOM Manipulation -->
+        <section class="section" id="dom-section">
+            <h2>🌐 Part 4: DOM Manipulation</h2>
+            <div class="demo-box">
+                <h3>Interactive DOM Elements</h3>
+                <div class="button-group">
+                    <button onclick="toggleTheme()">Toggle Theme</button>
+                    <button onclick="addNewElement()">Add Element</button>
+                    <button onclick="changeStyles()">Change Styles</button>
+                </div>
+                <div id="dynamicContent" class="dynamic-content">
+                    <p class="changeable-text">Click buttons to see DOM manipulation in action!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>🎓 JavaScript Fundamentals Assignment - Demonstrating Variables, Functions, Loops & DOM</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
